@@ -14,7 +14,6 @@ Markdown==3.1.1
 MarkupSafe==1.1.1
 mkl-fft
 mkl-random
-mkl-service
 nltk==3.4.5
 numpy==1.16.5
 Pillow==6.2.0
