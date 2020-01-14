@@ -28,3 +28,4 @@ termcolor==1.1.0
 tflearn==0.3.2
 Werkzeug==0.16.0
 wincertstore==0.2
+gunicorn
