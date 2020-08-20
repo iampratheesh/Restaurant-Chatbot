@@ -12,10 +12,12 @@ import tensorflow as tf
 import random
 import json
 import pickle
+
 with open("intents.json") as file:
 	data = json.load(file)
 with open("data.pickle","rb") as f:
 	words, labels, training, output = pickle.load(f)
+
 def bag_of_words(s, words):
 	bag = [0 for _ in range(len(words))]
 	
@@ -28,6 +30,7 @@ def bag_of_words(s, words):
 				bag[i] = 1
 
 	return np.array(bag)
+
 tf.reset_default_graph()
 
 net = tflearn.input_data(shape = [None, len(training[0])])
@@ -38,6 +41,7 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 model.load("model.tflearn")
+
 
 app = Flask(__name__)
 
