@@ -15,7 +15,7 @@ MarkupSafe==1.1.1
 mkl-fft
 mkl-random
 nltk==3.4.5
-numpy==1.16.5
+numpy==1.22.0
 Pillow==6.2.0
 protobuf==3.10.0
 pyreadline==2.1
